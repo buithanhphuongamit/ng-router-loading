@@ -1,0 +1,70 @@
+.router-loading-inner {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 50px;
+  width: auto;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  z-index: 9999;
+  span {
+    color: var(--rll-text-color);
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+}
+
+.router-loading-inner.no-overlay {
+  position: fixed;
+}
+
+.ldio-36ud7smp61l div {
+  position: absolute;
+  animation: ldio-36ud7smp61l 1s linear infinite;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 0 0 var(--rll-spinner-color);
+  transform-origin: 40px 42.5px;
+}
+
+.loadingio-spinner-eclipse-wrf4kymgo0r {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+
+.ldio-36ud7smp61l {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.4);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+
+.ldio-36ud7smp61l div {
+  box-sizing: content-box;
+}
+
+@keyframes ldio-36ud7smp61l {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

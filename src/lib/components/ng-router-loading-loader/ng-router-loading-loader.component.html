@@ -1,0 +1,8 @@
+<ng-container *ngIf="config.overlayVisible">
+  <div class="router-loading-overlay">
+    <div ng-router-loading-spinner></div>
+  </div>
+</ng-container>
+<ng-container *ngIf="!config.overlayVisible">
+  <div ng-router-loading-spinner></div>
+</ng-container>
