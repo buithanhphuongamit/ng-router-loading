@@ -2,23 +2,34 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Code scaffolding
+## How to use
+### Step 1
+Import NgRouterLoadingModule to AppModule
 
-Run `ng generate component component-name --project ng-router-loading` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-router-loading`.
-> Note: Don't forget to add `--project ng-router-loading` or else it will be added to the default project in your `angular.json` file. 
+```javascript
+{
+  imports: [
+    ...
+    NgRouterLoadingModule
+    ...
+  ]
+}
+```
 
-## Build
+or 
+```javascript
+{
+  imports: [
+    ...
+    NgRouterLoadingModule.forRoot(options)
+    ...
+  ]
+}
+```
+### Step 2
+Add directive ```ng-router-loading``` for root html tag (```router-outlet``` or ```ng-container```) in ```AppComponent```  
 
-Run `ng build ng-router-loading` to build the project. The build artifacts will be stored in the `dist/` directory.
+```html
+<router-outlet ng-router-outlet></router-outlet>
+```
 
-## Publishing
-
-After building your library with `ng build ng-router-loading`, go to the dist folder `cd dist/ng-router-loading` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ng-router-loading` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

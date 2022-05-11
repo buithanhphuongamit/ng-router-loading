@@ -10,11 +10,9 @@ import { IRouterLoadingConfig } from '../../interfaces/router-loading-config';
 export class NgRouterLoadingSpinnerComponent implements OnInit {
   ngClass: any = {};
   ngStyle: any = {};
-  textContent: string = 'Loading...';
   constructor(@Inject(ROUTER_LOADING_CONFIG) public config: IRouterLoadingConfig) { }
 
   ngOnInit(): void {
-    this.textContent = this.config.textContent ? this.config.textContent : this.textContent;
     this.ngClass = {
       ["no-overlay"]: !this.config.overlayVisible,
     };

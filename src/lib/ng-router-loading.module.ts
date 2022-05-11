@@ -15,7 +15,6 @@ const DEFAULT_CONFIG: IRouterLoadingConfig = {
   type: 'SPINNER',
 
   textVisible:true,
-  textContent: 'Loading...',
   textColor: '#333',
 
   overlayVisible: true,
