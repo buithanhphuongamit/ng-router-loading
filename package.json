@@ -1,6 +1,6 @@
 {
-  "name": "@amit/ng-router-loading",
-  "version": "0.0.1",
+  "name": "@amitgroup/ng-router-loading",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
